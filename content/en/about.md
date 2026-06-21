@@ -4,8 +4,8 @@ draft = false
 title = 'About'
 +++
 
-I'm Mark Westra, and this blog is where I think out loud about AI — the technology, the implications, and what it means for how we work and live.
+I'm Mark Tiele Westra, and in this blog I think out loud about AI: the technology, the implications, and what it means for how we work and live.
 
-I've spent years at the intersection of technology and strategy, and AI is the thing that's been keeping me up at night (in a good way). Whether it's large language models, agents, or the organisational challenges of actually deploying this stuff, I find it endlessly fascinating.
+My background: a PhD in Theoretical Physics and a Master's in Philosophy of Science, Technology and Society. Over 15 years of experience in software development, including data analysis tools used for water and sanitation projects in more than 20 countries, and machine learning projects with the World Bank. I currently hold a dual appointment as Practor Applied AI at Firda and Associate Professor of Applied Sciences of Applied AI at NHL Stenden.
 
-If you're curious about what AI is really doing to the world — beyond the hype and the panic — you're in the right place.
+I find the technology behind AI equally endlessly fascinating and genuinely unsettling. This blog is a reflection of my search to better understand this remarkable phenomenon.
