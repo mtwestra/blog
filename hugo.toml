@@ -1,0 +1,27 @@
+baseURL = "https://hiemsteed.nl/"
+locale = "en-us"
+title = "Westra on AI"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+enableInlineShortcodes = true
+buildDrafts = false
+
+[pagination]
+  pagerSize = 10
+
+[services]
+  [services.rss]
+    limit = 20
+
+[params]
+  defaultTheme = "dark"
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  ShowShareButtons = false
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
