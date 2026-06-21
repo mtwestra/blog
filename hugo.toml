@@ -1,7 +1,9 @@
 baseURL = "https://hiemsteed.nl/"
-locale = "en-us"
 title = "Westra on AI"
 theme = "PaperMod"
+
+defaultContentLanguage = "nl"
+defaultContentLanguageInSubdir = false
 
 enableRobotsTXT = true
 enableInlineShortcodes = true
@@ -25,3 +27,32 @@ buildDrafts = false
   home = ["HTML", "RSS"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
+
+[languages]
+  [languages.nl]
+    label = "Nederlands"
+    locale = "nl-NL"
+    weight = 1
+    contentDir = "content/nl"
+    [[languages.nl.menu.main]]
+      name = "Berichten"
+      url = "/posts/"
+      weight = 10
+    [[languages.nl.menu.main]]
+      name = "Over"
+      url = "/about/"
+      weight = 20
+
+  [languages.en]
+    label = "English"
+    locale = "en-US"
+    weight = 2
+    contentDir = "content/en"
+    [[languages.en.menu.main]]
+      name = "Posts"
+      url = "/en/posts/"
+      weight = 10
+    [[languages.en.menu.main]]
+      name = "About"
+      url = "/en/about/"
+      weight = 20
