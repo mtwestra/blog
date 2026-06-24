@@ -1,9 +1,9 @@
 +++
-date = '2026-06-25T09:00:00+02:00'
+date = '2026-06-24T09:00:00+02:00'
 draft = false
 title = 'Ideeën voor een goede toekomst'
 tags = []
-translationKey = "post_2026_06_25"
+translationKey = "post_2026_06_24"
 +++
 
 In een eerder stuk hield ik bewust een slag om de arm. We weten niet hoe ver de automatisering van kenniswerk door AI gaat, en hoe snel. Laat ik die voorzichtigheid nu even loslaten: stel dat het lukt. Stel dat machines binnen afzienbare tijd een groot deel van het betaalde denkwerk overnemen. Wat dan?

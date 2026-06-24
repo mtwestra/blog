@@ -1,9 +1,9 @@
 +++
-date = '2026-06-24T09:00:00+02:00'
+date = '2026-06-22T09:00:00+02:00'
 draft = false
 title = 'The plan is to automate almost all knowledge work. Where is the preparation?'
 tags = []
-translationKey = "post_2026_06_24"
+translationKey = "post_2026_06_22"
 +++
 
 Imagine a seventeen-year-old choosing a course of study right now. She is weighing up law, something in administration, or a degree in design. She does what we have been advising her to do for years: pick a direction and invest seriously in an education, in money and in time. The adults around her quietly assume that by the time she graduates, an entry-level job will be waiting for her, and a career beyond it.

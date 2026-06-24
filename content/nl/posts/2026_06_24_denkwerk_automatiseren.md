@@ -1,9 +1,9 @@
 +++
-date = '2026-06-24T09:00:00+02:00'
+date = '2026-06-22T09:00:00+02:00'
 draft = false
 title = 'Het plan is om bijna al het denkwerk te automatiseren. Waar blijft de voorbereiding?'
 tags = []
-translationKey = "post_2026_06_24"
+translationKey = "post_2026_06_22"
 +++
 
 Stel je een zeventienjarige voor die nu een opleiding kiest. Ze twijfelt tussen rechten, iets met administratie, of een opleiding tot vormgever. Ze doet wat we haar al jaren adviseren: kies een richting en investeer flink in een opleiding, zowel in geld als in tijd. De volwassenen om haar heen gaan er stilzwijgend van uit dat tegen de tijd dat ze is uitgeleerd er een startersbaan op haar wacht, en een loopbaan.

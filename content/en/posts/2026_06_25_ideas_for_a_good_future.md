@@ -1,9 +1,9 @@
 +++
-date = '2026-06-25T09:00:00+02:00'
+date = '2026-06-24T09:00:00+02:00'
 draft = false
 title = 'Ideas for a good future'
 tags = []
-translationKey = "post_2026_06_25"
+translationKey = "post_2026_06_24"
 +++
 
 In an earlier piece I deliberately kept my conclusions cautious. We do not know how far the automation of knowledge work by AI will go, or how quickly. Let me set that caution aside for a moment: suppose it succeeds. Suppose that within the foreseeable future, machines take over a large share of paid intellectual work. What then?
