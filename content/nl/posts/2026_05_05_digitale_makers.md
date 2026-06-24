@@ -3,6 +3,7 @@ date = '2026-05-05T09:00:00+02:00'
 draft = false
 title = 'Digitale Makers'
 tags = []
+translationKey = "post_2026_05_05"
 +++
 
 In het artikel ['Meer AI, minder instroom is een gevaarlijke combinatie'](https://www.linkedin.com/posts/anitabosman_minder-hbo-ict-instroom-door-ai-activity-7456787621285965825-jPPD/) beschrijven Anita Bosman en Klaas Brongers een riskante trend: jongeren kiezen vanwege AI niet meer voor ICT. Terwijl software in rap tempo in alle hoeken van de maatschappij doordringt, en het tekort aan ICT'ers structureel is.

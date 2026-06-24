@@ -3,6 +3,7 @@ date = '2026-04-06T09:00:00+02:00'
 draft = false
 title = 'Pleidooi voor rommelige onvolmaaktheid'
 tags = []
+translationKey = "post_2026_04_06"
 +++
 
 Pieter verwerkte adreswijzigingen voor een grote verzekeringsmaatschappij. Voorspelbaar en eenvoudig werk. Nuttig en belangrijk, voor hemzelf én voor zijn werkgever. Tot klanten hun adreswijziging zelf konden doorgeven. Toen was er voor Pieter geen passende arbeid meer.

@@ -1,0 +1,321 @@
+/* === DESIGN VARIABLES (light defaults) === */
+:root {
+  --ink:        #1a1a1a;
+  --ink-soft:   #2a2a2a;
+  --muted:      #6b6b6b;
+  --rule:       #e5e5e5;
+  --paper:      #ffffff;
+  --paper-soft: #fafafa;
+  --accent:     #2a4d6e;
+  --serif:      "EB Garamond", Georgia, "Times New Roman", serif;
+  --mono:       "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --measure:    44rem;
+  --line-height: 1.7;
+
+  /* PaperMod theme tokens — match our light palette */
+  --theme:     #ffffff;
+  --entry:     #ffffff;
+  --primary:   #1a1a1a;
+  --secondary: #6b6b6b;
+  --tertiary:  #e5e5e5;
+  --content:   #1a1a1a;
+  --code-bg:   #fafafa;
+  --border:    #e5e5e5;
+}
+
+/* === DARK MODE — flip variables only; elements adapt automatically === */
+:root[data-theme="dark"] {
+  --ink:        #e8e6e1;
+  --ink-soft:   #d4d0c8;
+  --muted:      #888880;
+  --rule:       #333333;
+  --paper:      #1a1a1a;
+  --paper-soft: #222222;
+  --accent:     #7aafd4;
+  /* PaperMod tokens */
+  --theme:      #1a1a1a;
+  --entry:      #1a1a1a;
+  --primary:    #e8e6e1;
+  --secondary:  #888880;
+  --tertiary:   #333333;
+  --content:    #e8e6e1;
+  --code-bg:    #222222;
+  --border:     #333333;
+}
+
+/* === BASE TYPOGRAPHY === */
+body,
+h1, h2, h3, h4, h5, h6,
+.post-content,
+.post-single,
+.post-header,
+.post-title,
+.nav,
+header,
+footer,
+.post-meta,
+.breadcrumbs {
+  font-family: var(--serif) !important;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 18px;
+  line-height: var(--line-height);
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
+/* === HEADER / NAV === */
+header.header {
+  background: var(--paper) !important;
+  border-bottom: 1px solid var(--rule) !important;
+  box-shadow: none !important;
+}
+
+/* Site title */
+.logo > a {
+  font-family: var(--serif) !important;
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  color: var(--ink) !important;
+}
+
+.logo > a:hover { color: var(--muted) !important; }
+
+nav.nav { background: var(--paper) !important; }
+
+/* Nav links */
+.menu a {
+  font-family: var(--serif) !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  color: var(--ink-soft) !important;
+}
+
+.menu a:hover { color: var(--accent) !important; }
+
+/* Language switcher — smaller, muted */
+.lang-menu a {
+  font-family: var(--serif) !important;
+  font-size: 0.8rem !important;
+  font-weight: 400 !important;
+  color: var(--muted) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+}
+
+.lang-menu a:hover { color: var(--accent) !important; }
+
+/* Hide the | separator between theme toggle and language switcher */
+.nav-sep { display: none !important; }
+
+/* === MAIN CONTENT AREA === */
+.main {
+  max-width: var(--measure);
+  padding: 3rem 1.5rem;
+  background: var(--paper) !important;
+}
+
+@media (min-width: 768px) {
+  .main { padding: 4rem 2rem; }
+}
+
+/* === HEADINGS === */
+h1 { font-size: 2.1rem !important; font-weight: 600 !important; letter-spacing: -0.02em !important; color: var(--ink) !important; }
+h2 { font-size: 1.55rem !important; font-weight: 600 !important; color: var(--ink) !important; }
+h3 { font-size: 1.25rem !important; font-weight: 600 !important; color: var(--ink-soft) !important; }
+h4, h5, h6 { font-size: 1.1rem !important; font-weight: 600 !important; color: var(--ink-soft) !important; }
+
+/* === BODY TEXT === */
+.post-content p,
+.post-content li,
+.post-content td {
+  font-family: var(--serif) !important;
+  font-size: 18px !important;
+  line-height: var(--line-height) !important;
+  color: var(--ink) !important;
+}
+
+/* === DROP CAP === */
+.post-content > p:first-of-type::first-letter {
+  font-family: var(--serif);
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 0.85;
+  float: left;
+  margin: 0.05em 0.1em 0 0;
+  color: var(--ink);
+}
+
+/* === LINKS === */
+.post-content a {
+  color: var(--ink) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid var(--rule) !important;
+  transition: color 0.15s ease, border-color 0.15s ease !important;
+}
+
+.post-content a:hover {
+  color: var(--accent) !important;
+  border-bottom-color: var(--accent) !important;
+}
+
+/* === POST LIST === */
+.post-entry,
+.first-entry {
+  position: relative !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: baseline !important;
+  justify-content: space-between !important;
+  gap: 1rem !important;
+  padding: 0.6rem 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid var(--rule) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transition: none !important;
+}
+
+.first-entry {
+  min-height: 0 !important;
+  margin: 0 !important;
+}
+
+.post-entry:last-child { border-bottom: none !important; }
+.post-entry:hover,
+.first-entry:hover { box-shadow: none !important; transform: none !important; }
+
+/* Title — left side */
+.entry-header {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.entry-header h2,
+.entry-header h2.entry-hint-parent {
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  margin: 0 !important;
+  color: var(--ink) !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  letter-spacing: 0 !important;
+  line-height: var(--line-height) !important;
+}
+
+.entry-header h2 a {
+  color: var(--ink) !important;
+  border: none !important;
+  text-decoration: none !important;
+  transition: color 0.15s ease !important;
+}
+
+.entry-header h2 a:hover { color: var(--accent) !important; }
+
+/* Hide summary (both regular and first-entry on home page) */
+.entry-content { display: none !important; }
+
+/* Date — right side.
+   font-size:0 on the footer hides the "&nbsp;·&nbsp;" text node
+   between the date span and the reading-time span.              */
+.entry-footer {
+  flex-shrink: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  font-size: 0 !important;
+}
+
+.entry-footer span:first-child {
+  display: inline !important;
+  font-size: 0.85rem !important;
+  color: var(--muted) !important;
+  font-variant-numeric: tabular-nums;
+  font-family: var(--serif) !important;
+}
+
+.entry-footer span:not(:first-child) { display: none !important; }
+
+/* === POST HEADER === */
+.post-header {
+  margin-bottom: 2rem !important;
+  border-bottom: 1px solid var(--rule) !important;
+  padding-bottom: 1.25rem !important;
+}
+
+.post-title {
+  font-size: 2.1rem !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
+  margin-bottom: 0.5rem !important;
+  color: var(--ink) !important;
+}
+
+.post-meta {
+  font-size: 0.875rem !important;
+  color: var(--muted) !important;
+  font-family: var(--serif) !important;
+}
+
+/* === BLOCKQUOTES === */
+.post-content blockquote {
+  margin: 2rem 0 !important;
+  padding: 0.25rem 0 0.25rem 1.5rem !important;
+  border-left: 2px solid var(--rule) !important;
+  background: transparent !important;
+  color: var(--ink-soft) !important;
+  font-style: italic !important;
+  border-radius: 0 !important;
+}
+
+/* === CODE === */
+.post-content code {
+  font-family: var(--mono) !important;
+  font-size: 0.88em !important;
+  background: var(--paper-soft) !important;
+  border: 1px solid var(--rule) !important;
+  border-radius: 3px !important;
+  padding: 0.1em 0.4em !important;
+  color: var(--ink-soft) !important;
+}
+
+.post-content pre {
+  background: var(--paper-soft) !important;
+  border: 1px solid var(--rule) !important;
+  border-radius: 4px !important;
+  font-family: var(--mono) !important;
+  font-size: 0.875rem !important;
+  line-height: 1.6 !important;
+}
+
+.post-content pre code {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+/* === HR === */
+.post-content hr {
+  height: 1px !important;
+  background: var(--rule) !important;
+  border: none !important;
+  margin: 2.5rem auto !important;
+}
+
+/* === FOOTER === */
+footer.footer {
+  border-top: 1px solid var(--rule) !important;
+  background: var(--paper) !important;
+  color: var(--muted) !important;
+  font-family: var(--serif) !important;
+  font-size: 0.8rem !important;
+}

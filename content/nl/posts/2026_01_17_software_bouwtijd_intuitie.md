@@ -3,6 +3,7 @@ date = '2026-01-17T09:00:00+02:00'
 draft = false
 title = 'Mijn software-bouwtijd intuitie werkt niet meer'
 tags = []
+translationKey = "post_2026_01_17"
 +++
 
 In mijn carriere heb ik vaak te maken gehad met een vrij ongrijpbaar element van software development: het inschatten van de tijd die nodig is om bepaalde functionaliteit te maken. Het is een soort 'dark art' waarin intuitie, ervaring en ongefundeerd optimisme samenkomen om een wilde slag te slaan naar 'hoe lang het gaat duren om dit te bouwen'. Onder programmeurs is het een rijk veld van humor, vaak met een kern van waarheid. Zo is er de 'pi-regel': maak een schatting van de tijd die je denkt nodig te hebben, en vermenigvuldig die met pi (ongeveer 3).

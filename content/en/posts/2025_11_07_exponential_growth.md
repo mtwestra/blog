@@ -3,6 +3,7 @@ date = '2025-11-07T09:00:00+02:00'
 draft = false
 title = 'Exponential growth – deceptively slow at first, then alarmingly fast'
 tags = []
+translationKey = "post_2025_11_07"
 +++
 
 Exponential growth: deceptively slow at first, then alarmingly fast. Place one grain of rice on the first square of a chessboard, two on the second, four on the third, eight on the fourth, and so on. How much rice do you need in total for all 64 squares? Take a moment to imagine it. What does your gut say? Now the answer: you need 370 billion tonnes of rice — roughly 670 times current global production.

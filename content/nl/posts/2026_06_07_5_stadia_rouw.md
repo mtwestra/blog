@@ -3,6 +3,7 @@ date = '2026-06-07T09:00:00+02:00'
 draft = false
 title = 'AI en de vijf stadia van rouw'
 tags = []
+translationKey = "post_2026_06_07"
 +++
 
 Met AI hebben we iets wat we als uniek menselijk zagen, onze intelligentie, in een machine gerealiseerd. En nu staan we ernaar te kijken. Wat we zien verrast en ontregelt ons: misschien is intelligentie niet precies wat we dachten dat het was, en is het misschien niet alleen van ons.

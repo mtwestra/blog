@@ -3,6 +3,7 @@ date = '2026-05-05T09:00:00+02:00'
 draft = false
 title = 'Digital Makers'
 tags = []
+translationKey = "post_2026_05_05"
 +++
 
 In the article ["More AI, less enrolment is a dangerous combination"](https://www.linkedin.com/posts/anitabosman_minder-hbo-ict-instroom-door-ai-activity-7456787621285965825-jPPD/), Anita Bosman and Klaas Brongers describe a worrying trend: young people are choosing not to study ICT because of AI. Meanwhile software is rapidly penetrating every corner of society, and the shortage of ICT professionals is structural.

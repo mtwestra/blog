@@ -3,6 +3,7 @@ date = '2026-04-06T09:00:00+02:00'
 draft = false
 title = 'A plea for messy imperfection'
 tags = []
+translationKey = "post_2026_04_06"
 +++
 
 Pieter processed address changes for a large insurance company. Predictable, straightforward work. Useful and important — for him and for his employer. Until customers could submit their own address changes online. After that, there was no suitable work left for Pieter.

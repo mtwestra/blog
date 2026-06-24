@@ -3,6 +3,7 @@ date = '2025-11-07T09:00:00+02:00'
 draft = false
 title = 'Exponentiële groei - eerst bedriegelijk langzaam, dan verontrustend snel'
 tags = []
+translationKey = "post_2025_11_07"
 +++
 
 Exponentiële groei: bedrieglijk langzaam in het begin, en dan alarmerend snel. Je legt op het eerste vakje van een schaakbord 1 rijskorrel, op het tweede vakje 2 korrels, dan 4, dan 8, enzovoort. Hoeveel rijst heb je in totaal nodig voor de 64 vakjes? Neem even een moment om het je voor te stellen. Wat zegt je gevoel? Dan het antwoord: je hebt 370 miljard ton rijst nodig, oftewel ongeveer 670 maal de huidige wereldproductie.

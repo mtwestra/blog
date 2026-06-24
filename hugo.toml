@@ -17,8 +17,8 @@ buildDrafts = false
     limit = 20
 
 [params]
-  defaultTheme = "dark"
-  ShowReadingTime = true
+  defaultTheme = "light"
+  ShowReadingTime = false
   ShowCodeCopyButtons = true
   ShowToc = true
   ShowShareButtons = false

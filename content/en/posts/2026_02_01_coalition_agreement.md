@@ -3,6 +3,7 @@ date = '2026-02-01T09:00:00+02:00'
 draft = false
 title = 'AI in the Coalition Agreement'
 tags = []
+translationKey = "post_2026_02_01"
 +++
 
 The new Dutch Coalition Agreement pays considerable attention to AI. Rightly so, I think, because AI is going to have a major impact on our lives. This, to my mind, is the key sentence: "We are building a digitally resilient society through an ecosystem approach, working together with education, business and government to take a step forward so that everyone can fully benefit from the opportunities of artificial intelligence."

@@ -3,6 +3,7 @@ date = '2026-06-07T09:00:00+02:00'
 draft = false
 title = 'AI and the five stages of grief'
 tags = []
+translationKey = "post_2026_06_07"
 +++
 
 With AI we have realised something we regarded as uniquely human — our intelligence — inside a machine. And now we stand looking at it. What we see surprises and unsettles us: perhaps intelligence is not quite what we thought it was, and perhaps it is not ours alone.

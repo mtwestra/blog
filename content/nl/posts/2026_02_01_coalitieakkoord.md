@@ -3,6 +3,7 @@ date = '2026-02-01T09:00:00+02:00'
 draft = false
 title = 'AI in het Coalitieakkoord'
 tags = []
+translationKey = "post_2026_02_01"
 +++
 
 In het nieuwe Coalitieakkoord is er veel aandacht voor AI. Terecht denk ik, want AI gaat een grote impact op ons leven hebben. Dit is wat mij betreft de sleutelzin: “We bouwen aan een digitaal weerbare samenleving aan de hand van een ecosysteemaanpak, waarin we samen met het onderwijs, het bedrijfsleven en de overheid een stap vooruit zetten zodat iedereen volop de kansen van kunstmatige intelligentie kan benutten.” 

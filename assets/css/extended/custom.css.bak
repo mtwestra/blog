@@ -1,0 +1,353 @@
+/* === DESIGN VARIABLES === */
+:root {
+  --ink:        #1a1a1a;
+  --ink-soft:   #2a2a2a;
+  --muted:      #6b6b6b;
+  --rule:       #e5e5e5;
+  --paper:      #ffffff;
+  --paper-soft: #fafafa;
+  --accent:     #2a4d6e;
+  --serif:      "EB Garamond", Georgia, "Times New Roman", serif;
+  --mono:       "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --measure:    44rem;
+  --line-height: 1.7;
+
+  /* PaperMod theme tokens — force light */
+  --theme:     #ffffff;
+  --entry:     #ffffff;
+  --primary:   #1a1a1a;
+  --secondary: #6b6b6b;
+  --tertiary:  #e5e5e5;
+  --content:   #1a1a1a;
+  --code-bg:   #fafafa;
+  --border:    #e5e5e5;
+}
+
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+/* === DARK MODE === */
+:root[data-theme="dark"] {
+  --ink:        #e8e6e1;
+  --ink-soft:   #d4d0c8;
+  --muted:      #888880;
+  --rule:       #333333;
+  --paper:      #1a1a1a;
+  --paper-soft: #222222;
+  --accent:     #7aafd4;
+  /* Override PaperMod's own dark tokens too */
+  --theme:      #1a1a1a;
+  --entry:      #1a1a1a;
+  --primary:    #e8e6e1;
+  --secondary:  #888880;
+  --tertiary:   #333333;
+  --content:    #e8e6e1;
+  --code-bg:    #222222;
+  --border:     #333333;
+}
+
+[data-theme="dark"] body                { background: #1a1a1a !important; color: #e8e6e1 !important; }
+[data-theme="dark"] header.header       { background: #1a1a1a !important; border-bottom-color: #333333 !important; }
+[data-theme="dark"] .main               { background: #1a1a1a !important; }
+[data-theme="dark"] footer.footer       { background: #1a1a1a !important; border-top-color: #333333 !important; color: #888880 !important; }
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6                  { color: #e8e6e1 !important; }
+[data-theme="dark"] .logo > a           { color: #e8e6e1 !important; }
+[data-theme="dark"] .menu a             { color: #d4d0c8 !important; }
+[data-theme="dark"] .post-entry,
+[data-theme="dark"] .first-entry        { border-bottom-color: #333333 !important; }
+[data-theme="dark"] .entry-header h2,
+[data-theme="dark"] .entry-header h2 a  { color: #e8e6e1 !important; }
+[data-theme="dark"] .entry-header h2 a:hover { color: #7aafd4 !important; }
+[data-theme="dark"] .entry-footer span:first-child { color: #888880 !important; }
+[data-theme="dark"] .post-content p,
+[data-theme="dark"] .post-content li    { color: #e8e6e1 !important; }
+[data-theme="dark"] .post-content a     { color: #e8e6e1 !important; border-bottom-color: #333333 !important; }
+[data-theme="dark"] .post-content a:hover { color: #7aafd4 !important; border-bottom-color: #7aafd4 !important; }
+[data-theme="dark"] .post-title         { color: #e8e6e1 !important; }
+[data-theme="dark"] .post-meta          { color: #888880 !important; }
+[data-theme="dark"] .post-header        { border-bottom-color: #333333 !important; }
+[data-theme="dark"] .post-content blockquote { border-left-color: #333333 !important; color: #d4d0c8 !important; }
+[data-theme="dark"] .post-content code  { background: #222222 !important; border-color: #333333 !important; color: #d4d0c8 !important; }
+[data-theme="dark"] .post-content pre   { background: #222222 !important; border-color: #333333 !important; }
+
+/* === BASE TYPOGRAPHY === */
+body,
+h1, h2, h3, h4, h5, h6,
+.post-content,
+.post-single,
+.post-header,
+.post-title,
+.nav,
+header,
+footer,
+.post-meta,
+.breadcrumbs {
+  font-family: var(--serif) !important;
+}
+
+body {
+  font-size: 18px;
+  line-height: var(--line-height);
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
+/* === HEADER / NAV === */
+header.header {
+  background: #ffffff !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+  box-shadow: none !important;
+}
+
+/* Site title */
+.logo > a {
+  font-family: var(--serif) !important;
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  color: #1a1a1a !important;
+}
+
+.logo > a:hover { color: #6b6b6b !important; }
+
+nav.nav { background: #ffffff !important; }
+
+/* Nav links */
+.menu a {
+  font-family: var(--serif) !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  color: #2a2a2a !important;
+}
+
+.menu a:hover { color: #2a4d6e !important; }
+
+/* Language switcher — smaller, muted */
+.lang-menu a {
+  font-family: var(--serif) !important;
+  font-size: 0.8rem !important;
+  font-weight: 400 !important;
+  color: #6b6b6b !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+}
+
+.lang-menu a:hover { color: #2a4d6e !important; }
+
+/* Hide the | separator between theme toggle and language switcher */
+.nav-sep { display: none !important; }
+
+/* === MAIN CONTENT AREA === */
+.main {
+  max-width: var(--measure);
+  padding: 3rem 1.5rem;
+  background: #ffffff !important;
+}
+
+@media (min-width: 768px) {
+  .main { padding: 4rem 2rem; }
+}
+
+/* === HEADINGS === */
+h1 { font-size: 2.1rem !important; font-weight: 600 !important; letter-spacing: -0.02em !important; color: #1a1a1a !important; }
+h2 { font-size: 1.55rem !important; font-weight: 600 !important; color: #1a1a1a !important; }
+h3 { font-size: 1.25rem !important; font-weight: 600 !important; color: #2a2a2a !important; }
+h4, h5, h6 { font-size: 1.1rem !important; font-weight: 600 !important; color: #2a2a2a !important; }
+
+/* === BODY TEXT === */
+.post-content p,
+.post-content li,
+.post-content td {
+  font-family: var(--serif) !important;
+  font-size: 18px !important;
+  line-height: var(--line-height) !important;
+  color: #1a1a1a !important;
+}
+
+/* === DROP CAP === */
+.post-content > p:first-of-type::first-letter {
+  font-family: var(--serif);
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 0.85;
+  float: left;
+  margin: 0.05em 0.1em 0 0;
+  color: #1a1a1a;
+}
+
+/* === LINKS === */
+.post-content a {
+  color: #1a1a1a !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+  transition: color 0.15s ease, border-color 0.15s ease !important;
+}
+
+.post-content a:hover {
+  color: #2a4d6e !important;
+  border-bottom-color: #2a4d6e !important;
+}
+
+/* === POST LIST === */
+.post-entry,
+.first-entry {
+  position: relative !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: baseline !important;
+  justify-content: space-between !important;
+  gap: 1rem !important;
+  padding: 0.6rem 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transition: none !important;
+}
+
+.first-entry {
+  min-height: 0 !important;
+  margin: 0 !important;
+}
+
+.post-entry:last-child { border-bottom: none !important; }
+.post-entry:hover,
+.first-entry:hover { box-shadow: none !important; transform: none !important; }
+
+/* Title — left side */
+.entry-header {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.entry-header h2,
+.entry-header h2.entry-hint-parent {
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  margin: 0 !important;
+  color: #1a1a1a !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  letter-spacing: 0 !important;
+  line-height: var(--line-height) !important;
+}
+
+.entry-header h2 a {
+  color: #1a1a1a !important;
+  border: none !important;
+  text-decoration: none !important;
+  transition: color 0.15s ease !important;
+}
+
+.entry-header h2 a:hover { color: #2a4d6e !important; }
+
+/* Hide summary (both regular and first-entry on home page) */
+.entry-content { display: none !important; }
+
+/* Date — right side.
+   font-size:0 on the footer hides the "&nbsp;·&nbsp;" text node
+   between the date span and the reading-time span.              */
+.entry-footer {
+  flex-shrink: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  font-size: 0 !important;
+}
+
+.entry-footer span:first-child {
+  display: inline !important;
+  font-size: 0.85rem !important;
+  color: #6b6b6b !important;
+  font-variant-numeric: tabular-nums;
+  font-family: var(--serif) !important;
+}
+
+.entry-footer span:not(:first-child) { display: none !important; }
+
+/* === POST HEADER === */
+.post-header {
+  margin-bottom: 2rem !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+  padding-bottom: 1.25rem !important;
+}
+
+.post-title {
+  font-size: 2.1rem !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
+  margin-bottom: 0.5rem !important;
+  color: #1a1a1a !important;
+}
+
+.post-meta {
+  font-size: 0.875rem !important;
+  color: #6b6b6b !important;
+  font-family: var(--serif) !important;
+}
+
+/* === BLOCKQUOTES === */
+.post-content blockquote {
+  margin: 2rem 0 !important;
+  padding: 0.25rem 0 0.25rem 1.5rem !important;
+  border-left: 2px solid #e5e5e5 !important;
+  background: transparent !important;
+  color: #2a2a2a !important;
+  font-style: italic !important;
+  border-radius: 0 !important;
+}
+
+/* === CODE === */
+.post-content code {
+  font-family: var(--mono) !important;
+  font-size: 0.88em !important;
+  background: #fafafa !important;
+  border: 1px solid #e5e5e5 !important;
+  border-radius: 3px !important;
+  padding: 0.1em 0.4em !important;
+  color: #2a2a2a !important;
+}
+
+.post-content pre {
+  background: #fafafa !important;
+  border: 1px solid #e5e5e5 !important;
+  border-radius: 4px !important;
+  font-family: var(--mono) !important;
+  font-size: 0.875rem !important;
+  line-height: 1.6 !important;
+}
+
+.post-content pre code {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+/* === HR === */
+.post-content hr {
+  height: 1px !important;
+  background: #e5e5e5 !important;
+  border: none !important;
+  margin: 2.5rem auto !important;
+}
+
+/* === FOOTER === */
+footer.footer {
+  border-top: 1px solid #e5e5e5 !important;
+  background: #ffffff !important;
+  color: #6b6b6b !important;
+  font-family: var(--serif) !important;
+  font-size: 0.8rem !important;
+}

@@ -3,6 +3,7 @@ date = '2026-01-17T09:00:00+02:00'
 draft = false
 title = 'My software estimation intuition no longer works'
 tags = []
+translationKey = "post_2026_01_17"
 +++
 
 Throughout my career I have regularly encountered one of the more elusive elements of software development: estimating how long it takes to build a given piece of functionality. It is a kind of dark art in which intuition, experience and unfounded optimism combine to produce a wild guess at "how long this will take to build." Among programmers it is a rich source of humour, usually with a kernel of truth. There is, for instance, the "pi rule": take your estimate and multiply it by pi (roughly 3).
