@@ -164,8 +164,7 @@ h4, h5, h6 { font-size: 1.1rem !important; font-weight: 600 !important; color: v
 }
 
 /* === POST LIST === */
-.post-entry,
-.first-entry {
+.post-entry {
   position: relative !important;
   display: flex !important;
   flex-direction: row !important;
@@ -182,25 +181,42 @@ h4, h5, h6 { font-size: 1.1rem !important; font-weight: 600 !important; color: v
   transition: none !important;
 }
 
-.first-entry {
-  min-height: 0 !important;
+.post-entry:last-child { border-bottom: none !important; }
+.post-entry:hover { box-shadow: none !important; transform: none !important; }
+
+/* Hide summary on regular list entries */
+.post-entry .entry-content { display: none !important; }
+
+/* Date — right side.
+   font-size:0 hides the "&nbsp;·&nbsp;" text node between spans. */
+.post-entry .entry-footer {
+  flex-shrink: 0 !important;
   margin: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  font-size: 0 !important;
 }
 
-.post-entry:last-child { border-bottom: none !important; }
-.post-entry:hover,
-.first-entry:hover { box-shadow: none !important; transform: none !important; }
+.post-entry .entry-footer span:first-child {
+  display: inline !important;
+  font-size: 0.85rem !important;
+  color: var(--muted) !important;
+  font-variant-numeric: tabular-nums;
+  font-family: var(--serif) !important;
+}
 
-/* Title — left side */
-.entry-header {
+.post-entry .entry-footer span:not(:first-child) { display: none !important; }
+
+/* Title — left side (regular entries) */
+.post-entry .entry-header {
   flex: 1 1 auto !important;
   min-width: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
 }
 
-.entry-header h2,
-.entry-header h2.entry-hint-parent {
+.post-entry .entry-header h2,
+.post-entry .entry-header h2.entry-hint-parent {
   font-size: 1rem !important;
   font-weight: 400 !important;
   margin: 0 !important;
@@ -212,30 +228,86 @@ h4, h5, h6 { font-size: 1.1rem !important; font-weight: 600 !important; color: v
   line-height: var(--line-height) !important;
 }
 
-.entry-header h2 a {
+.post-entry .entry-header h2 a {
   color: var(--ink) !important;
   border: none !important;
   text-decoration: none !important;
   transition: color 0.15s ease !important;
 }
 
-.entry-header h2 a:hover { color: var(--accent) !important; }
+.post-entry .entry-header h2 a:hover { color: var(--accent) !important; }
 
-/* Hide summary (both regular and first-entry on home page) */
-.entry-content { display: none !important; }
-
-/* Date — right side.
-   font-size:0 on the footer hides the "&nbsp;·&nbsp;" text node
-   between the date span and the reading-time span.              */
-.entry-footer {
-  flex-shrink: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  white-space: nowrap !important;
-  font-size: 0 !important;
+/* === FIRST ENTRY (most recent post preview on home page) === */
+.first-entry {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 0.6rem !important;
+  padding: 0 0 1.5rem 0 !important;
+  margin: 0 0 0.5rem 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid var(--rule) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  min-height: 0 !important;
 }
 
-.entry-footer span:first-child {
+.first-entry .entry-header {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.first-entry .entry-header h2 {
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+  color: var(--ink) !important;
+  letter-spacing: -0.01em !important;
+  line-height: 1.4 !important;
+}
+
+.first-entry .entry-header h2 a {
+  color: var(--ink) !important;
+  border: none !important;
+  text-decoration: none !important;
+}
+
+.first-entry .entry-header h2 a:hover { color: var(--accent) !important; }
+
+.first-entry .entry-content {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 4 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  color: var(--ink) !important;
+  font-family: var(--serif) !important;
+  font-size: 1rem !important;
+  line-height: var(--line-height) !important;
+  margin: 0 !important;
+}
+
+.first-entry .entry-content p { margin: 0 !important; }
+
+/* "Read more" link */
+a.read-more {
+  font-family: var(--serif) !important;
+  font-size: 0.9rem !important;
+  color: var(--accent) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid var(--accent) !important;
+  transition: opacity 0.15s ease !important;
+}
+
+a.read-more:hover { opacity: 0.75 !important; }
+
+.first-entry .entry-footer {
+  font-size: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.first-entry .entry-footer span:first-child {
   display: inline !important;
   font-size: 0.85rem !important;
   color: var(--muted) !important;
@@ -243,7 +315,7 @@ h4, h5, h6 { font-size: 1.1rem !important; font-weight: 600 !important; color: v
   font-family: var(--serif) !important;
 }
 
-.entry-footer span:not(:first-child) { display: none !important; }
+.first-entry .entry-footer span:not(:first-child) { display: none !important; }
 
 /* === POST HEADER === */
 .post-header {
