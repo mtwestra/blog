@@ -41,7 +41,7 @@ buildDrafts = false
       url = "/subscribe/"
       weight = 35
     [[languages.nl.menu.main]]
-      name = "Berichten"
+      name = "Blog"
       url = "/posts/"
       weight = 10
     [[languages.nl.menu.main]]
@@ -65,7 +65,7 @@ buildDrafts = false
       url = "/en/subscribe/"
       weight = 35
     [[languages.en.menu.main]]
-      name = "Posts"
+      name = "Blog"
       url = "/en/posts/"
       weight = 10
     [[languages.en.menu.main]]
