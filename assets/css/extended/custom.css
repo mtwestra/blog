@@ -98,7 +98,12 @@ nav.nav { background: var(--paper) !important; }
 .menu a:hover { color: var(--accent) !important; }
 
 /* Language switcher — smaller, muted */
-.lang-menu a {
+li.lang-menu {
+  display: flex !important;
+  align-items: center !important;
+}
+
+li.lang-menu a {
   font-family: var(--serif) !important;
   font-size: 0.8rem !important;
   font-weight: 400 !important;
@@ -107,10 +112,7 @@ nav.nav { background: var(--paper) !important; }
   letter-spacing: 0.05em !important;
 }
 
-.lang-menu a:hover { color: var(--accent) !important; }
-
-/* Hide the | separator between theme toggle and language switcher */
-.nav-sep { display: none !important; }
+li.lang-menu a:hover { color: var(--accent) !important; }
 
 /* === MAIN CONTENT AREA === */
 .main {
