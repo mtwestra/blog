@@ -35,6 +35,12 @@ buildDrafts = false
     weight = 1
     contentDir = "content/nl"
     [[languages.nl.menu.main]]
+      name = ""
+      pre = "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-2px'><path d='M4 11a9 9 0 0 1 9 9'/><path d='M4 4a16 16 0 0 1 16 16'/><circle cx='5' cy='19' r='1'/></svg>"
+      title = "Abonneren"
+      url = "/subscribe/"
+      weight = 5
+    [[languages.nl.menu.main]]
       name = "Berichten"
       url = "/posts/"
       weight = 10
@@ -42,12 +48,22 @@ buildDrafts = false
       name = "Over"
       url = "/about/"
       weight = 20
+    [[languages.nl.menu.main]]
+      name = "Contact"
+      url = "/contact/"
+      weight = 30
 
   [languages.en]
     label = "English"
     locale = "en-US"
     weight = 2
     contentDir = "content/en"
+    [[languages.en.menu.main]]
+      name = ""
+      pre = "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' style='vertical-align:-2px'><path d='M4 11a9 9 0 0 1 9 9'/><path d='M4 4a16 16 0 0 1 16 16'/><circle cx='5' cy='19' r='1'/></svg>"
+      title = "Subscribe"
+      url = "/en/subscribe/"
+      weight = 5
     [[languages.en.menu.main]]
       name = "Posts"
       url = "/en/posts/"
@@ -56,3 +72,7 @@ buildDrafts = false
       name = "About"
       url = "/en/about/"
       weight = 20
+    [[languages.en.menu.main]]
+      name = "Contact"
+      url = "/en/contact/"
+      weight = 30
